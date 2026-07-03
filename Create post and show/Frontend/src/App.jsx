@@ -1,0 +1,18 @@
+import { BrowserRouter as Router , Routes, Route} from 'react-router-dom';
+import CreatePost from './pages/createPost.jsx';
+import Feed from "./pages/feed.jsx"
+
+
+const App = () => {
+  return (
+    <Router>
+      <Routes>
+        <Route path='/create-post' element={<CreatePost/>} />
+        <Route path='/feed' element={<Feed />} />
+      </Routes>
+    </Router>
+
+  )
+}
+
+export default App
